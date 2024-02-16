@@ -1,5 +1,5 @@
-SELECT Dpto_General, Cons_Desc ,COUNT(Id_Cita) as ATENCIONES
+SELECT Dpto_General, Cons_Desc,PERSONAL_ATIENDE ,COUNT(Id_Cita) as ATENCIONES
 FROM BD_ENERO 
 WHERE TIPO_ATC_22 ='1'
 AND Id_Correlativo_Item ='1'
-GROUP by Cons_Desc, Dpto_General
+GROUP by Cons_Desc, Dpto_General,PERSONAL_ATIENDE
